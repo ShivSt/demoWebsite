@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<base href="file:///D:/Development/Website/demoSite/" />
+		<title>Shiv personified profile</title>
+		<link rel="icon" href="assets/favicon.png">
+		<!-- using internal styles -->
+		<style>
+			
+			p{color: blue;}
+			a{margin-bottom: 20px; size: 20px;}
+			body{
+				margin-left:20px;
+				margin-right:20px;
+				}
+		</style>
+	</head>
+	
+	
+	<body>
+		<!-- inline styling	-->
+		<div class="top" style="background-color: rgb(0, 255, 149); text-align: center;">
+			<h1 id="heading" style="color: maroon;">This is not the end! this is just skyfall</h1>
+			<p><i>just for fun!!</i></p>
+		</div>
+		
+		<div class="sections">
+			<h3 name="info" style="margin-bottom:-10px">Section 1: Basic info</h3>
+			<ul type="disc">
+				<li>Name: Shiv Thakur</li>
+				<li>Place: India</li>
+			</ul>
+		</div>
+		
+		<div class="sections">
+			<h3 name="resume">Section 2: Resume</h3>
+			<a href="./pages/resume.html">Shiv Resume</a>
+		</div>
+		
+		<div class="sections">
+			<h3 name="websites">Section 3: Websites</h3>
+			<a href="https://github.com/ShivSt" target="_blank">Shiv's github profile</a><br/>
+			<a href="https://linkedin.com/in/shiv-thakur" target="_blank">Shiv's linkedin profile</a>
+		</div>
+		
+		<div class"sections">
+			<h3>Section 4: External Videos:</h3>
+			<embed name="external-video" width="560" height="315" src="https://www.youtube.com/embed/AfuNtXWDuo0"></embed>
+			<h3 name="video-title" style="color: red;" >A youtube video embed in your webpage</h3>
+			<hr width="560" align="left"/>
+			<p>
+				<b>Description:</b>
+				<br/>This is the way of using external video source in your page
+			</p>
+		</div>
+		
+		<div class="sections">
+			<h3 name="likes" style="margin-bottom:-10px">Section 5: Everything Else</h3>
+			<p>
+			<ul type="square">
+				<li>Cricket (playing more than watching)</li>
+				<li>Football (watching)</li>
+				<li>books (reading)</li>
+				<li>movies (somewhat)</li>
+				<li>music (listening)</li>
+			</ul>
+			</p>
+		</div>
+		<!--
+		<script src="resuorces/info.json"/>
+
+		<script>
+			var userinfo = JSON.parse(resources/info);
+			var basicInfo = document.getElementsByClassName("sections")[0];
+			var infoList = basicInfo.getElementsByTagName("li");
+			infoList[0].innerHTML= `Name: ${userinfo['name']}`;
+			infoList[1].innerHTML= `Name: ${userinfo.place}`;
+			
+		</script>
+		-->
+	</body>
+</html>

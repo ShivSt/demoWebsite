@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shiv's Resume</title>
+		<!-- ./ is used to access the current folder and ../ is used to access the parent of current -->
+		<link rel="stylesheet" type="text/css" href="../css/resumepage.css">
+	</head>
+
+	<body>
+		<div style="text-align: right; padding-right:50px; color: royalblue;"  class="sections">
+			<h2 id="name" style="margin-bottom:-20px"></h2>
+			<h4 id="email" style="margin-bottom:-20px"><i></i></h4>
+			<h4 id="phone" style="margin-bottom:-10px"><i></i></h4>
+			<img src="../assets/favicon.png" onclick="giveInfo()" ></img>
+		</div>
+		
+		<div class="sections">
+			<h3 name="summary">Summary</h3>
+			<ul type="disc">
+				<li>Worked as an QA engineer for more than 2 and half years. 2 years of experience in Automation testing</li>
+				<li>Test scenario, cases identifications and writing</li>
+				<li>Working in agile team with daily scrum call</li>
+				<li>Bug reporting with JIRA and ALM tools</li>
+				<li>Handling a team of QA engineers for common goals</li>
+			</ul>
+		</div>
+		
+		<div class="sections">
+			<h3 name="educations">Educational qualifications</h3>
+			<ul>
+				<li>B.Tech from GKV, Haridwar</li>
+				<li>10+2 from C.M Science college Darbhanga</li>
+				<li>10th from ML Academy, Laheriasarai</li>
+			</ul>
+		</div>
+		
+		<div class="sections">
+			<h3 name="projects">Previous projects</h3>
+			<ol type="I">
+				<li>KPMG for TCS, Kolkata</li>
+				<li>Freelancing</li>
+			</ol>
+		</div>
+		
+		<div class="sections">
+			<h3 name="skills">Technical Skills</h3>
+			<dl style="padding-left: 20px">
+				<dt>Languages: </dt>	<dd><i>C. C++, Java, Python, SQL</i></i></dd>
+				<dt>Tools: </dt>	<dd><i>Selenium, Eclipse, Pycharm, VS code, jenkins</i></dd>
+				<dt>Reporting: </dt>	<dd><i>JIRA, ALM</i></dd>
+				<dt>Utility tools: </dt>	<dd><i>MS Office, skype, Open office</i></dd>	
+				<dt>Operating systems: </dt>	<dd><i>Windows, Linux</i></dd>
+				<dt>Others: </dt>	<dd><i>CICD, Github, git</i></dd>
+			</dl>
+		</div>
+		<!--
+		<script src="../js/script1.js"></script>
+		-->
+		<script>
+			//js function
+			function giveInfo(){
+			var n=1;
+			//js object
+			var info = {
+			name : "John Doe",
+			email : "abc@xyz.com",
+			phone : 1234567890
+			};
+			document.getElementById("name").innerHTML=info.name;
+			document.getElementById("email").innerHTML=info.email;
+			document.getElementById("phone").innerHTML=info.phone;
+			}
+		</script>
+	
+	</body>
+</html>
