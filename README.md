@@ -14,7 +14,7 @@ A demoSite to upgrade and enhance your web develoment skills
 ## Steps To Follow
 
 - Select an issue
-- Open [project here](https://github.com/chavarera/demoWebsite)
+- Open [project here](https://github.com/ShivSt/demoWebsite)
 - Create a fork of the project
 - Create clone of forked project on your local machine
 - Checkout to development branch
