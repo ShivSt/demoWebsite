@@ -2,68 +2,69 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<base href="file:///D:/Development/Website/demoSite/" />
+		<base href="file:///D:/Development/Web/demoSite/" />
 		<title>Shiv personified profile</title>
 		<link rel="icon" href="assets/favicon.png">
-		<!-- using internal styles -->
-		<style>
-			
-			p{color: blue;}
-			a{margin-bottom: 20px; size: 20px;}
-			body{
-				margin-left:20px;
-				margin-right:20px;
-				}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/indexpage.css">
 	</head>
 	
 	
 	<body>
 		<!-- inline styling	-->
-		<div class="top" style="background-color: rgb(0, 255, 149); text-align: center;">
-			<h1 id="heading" style="color: maroon;">This is not the end! this is just skyfall</h1>
-			<p><i>just for fun!!</i></p>
+		
+		<div class="top" >
+			<div class= "headerIcon">
+				<a href="index.html">
+					<img src="assets/favicon.png" title="page icon"/>
+				</a>
+			</div>
+			<div class="headerTitle" style="width: fit-content;">
+			 	<h1 id="heading" style="color: maroon; margin-bottom: -15px;">This is not the end! this is just skyfall</h1>
+				<p style="text-align: end; font-size: 150%; padding-right: 10%;"><i>just for fun!!</i></p>
+			</div>
+			
 		</div>
 		
-		<div class="sections">
-			<h3 name="info" style="margin-bottom:-10px">Section 1: Basic info</h3>
+		
+		<div class="section">
+			<h3 name="info" >Section 1: Basic info</h3>
 			<ul type="disc">
-				<li>Name: Shiv Thakur</li>
+				<li>Name: John Doe</li>
 				<li>Place: India</li>
 			</ul>
 		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="resume">Section 2: Resume</h3>
-			<a href="./pages/resume.html">Shiv Resume</a>
+			<a href="./pages/resume.html">John's Resume</a>
 		</div>
 		
-		<div class="sections">
-			<h3 name="websites">Section 3: Websites</h3>
-			<a href="https://github.com/ShivSt" target="_blank">Shiv's github profile</a><br/>
-			<a href="https://linkedin.com/in/shiv-thakur" target="_blank">Shiv's linkedin profile</a>
+		<div class="section">
+			<h3 name="Webs">Section 3: Webs</h3>
+			<a href="https://github.com/ShivSt" target="_blank">John's github profile</a><br/>
+			<a href="https://linkedin.com/in/john-doe" target="_blank">John's linkedin profile</a>
 		</div>
 		
-		<div class"sections">
-			<h3>Section 4: External Videos:</h3>
-			<embed name="external-video" width="560" height="315" src="https://www.youtube.com/embed/AfuNtXWDuo0"></embed>
-			<h3 name="video-title" style="color: red;" >A youtube video embed in your webpage</h3>
-			<hr width="560" align="left"/>
-			<p>
-				<b>Description:</b>
-				<br/>This is the way of using external video source in your page
-			</p>
+		<div class="section">
+			<h3 name="Webs">Section 3: External videos</h3>
+			<div class="video-container card">
+				<object name="external-video1" data="https://www.youtube.com/embed/h1es6YlbCjA" allowfullscreen></object>
+				<h4 name="video-title">A youtube video</h4>
+			</div>
+			<hr/>
+			<h5>Description</h5>
+			<p>A youtube video inserted in your webpage with embed link</p>
 		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="likes" style="margin-bottom:-10px">Section 5: Everything Else</h3>
 			<p>
 			<ul type="square">
-				<li>Cricket (playing more than watching)</li>
-				<li>Football (watching)</li>
-				<li>books (reading)</li>
-				<li>movies (somewhat)</li>
-				<li>music (listening)</li>
+				<li>Cricket <i>(playing more than watching)</i></li>
+				<li>Football <i>(watching)</i></li>
+				<li>books <i>(reading)</i></li>
+				<li>movies <i>(somewhat)</i></li>
+				<li>music <i>(listening)</i></li>
 			</ul>
 			</p>
 		</div>
@@ -72,12 +73,13 @@
 
 		<script>
 			var userinfo = JSON.parse(resources/info);
-			var basicInfo = document.getElementsByClassName("sections")[0];
+			var basicInfo = document.getElementsByClassName("section")[0];
 			var infoList = basicInfo.getElementsByTagName("li");
 			infoList[0].innerHTML= `Name: ${userinfo['name']}`;
 			infoList[1].innerHTML= `Name: ${userinfo.place}`;
 			
 		</script>
 		-->
+		
 	</body>
 </html>

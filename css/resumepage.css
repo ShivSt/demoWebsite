@@ -12,3 +12,15 @@ div {
 	padding: 30px;*/
 	}
 
+div[name='top']{
+	float: right;
+}
+
+div[name='top'] .hover {
+	font-size: 70%;
+	display: none;
+  }
+  
+  div[name='top']:hover .hover {
+	display: block;
+  }

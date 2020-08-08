@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Shiv's Resume</title>
+		<title>John's Resume</title>
 		<!-- ./ is used to access the current folder and ../ is used to access the parent of current -->
 		<link rel="stylesheet" type="text/css" href="../css/resumepage.css">
 	</head>
 
 	<body>
-		<div style="text-align: right; padding-right:50px; color: royalblue;"  class="sections">
-			<h2 id="name" style="margin-bottom:-20px"></h2>
-			<h4 id="email" style="margin-bottom:-20px"><i></i></h4>
-			<h4 id="phone" style="margin-bottom:-10px"><i></i></h4>
-			<img src="../assets/favicon.png" onclick="giveInfo()" ></img>
-		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="summary">Summary</h3>
 			<ul type="disc">
 				<li>Worked as an QA engineer for more than 2 and half years. 2 years of experience in Automation testing</li>
@@ -25,24 +19,24 @@
 			</ul>
 		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="educations">Educational qualifications</h3>
 			<ul>
-				<li>B.Tech from GKV, Haridwar</li>
-				<li>10+2 from C.M Science college Darbhanga</li>
-				<li>10th from ML Academy, Laheriasarai</li>
+				<li>B.Tech from ...</li>
+				<li>10+2 from ...</li>
+				<li>10th from ...</li>
 			</ul>
 		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="projects">Previous projects</h3>
 			<ol type="I">
-				<li>KPMG for TCS, Kolkata</li>
+				<li>KPMG for </li>
 				<li>Freelancing</li>
 			</ol>
 		</div>
 		
-		<div class="sections">
+		<div class="section">
 			<h3 name="skills">Technical Skills</h3>
 			<dl style="padding-left: 20px">
 				<dt>Languages: </dt>	<dd><i>C. C++, Java, Python, SQL</i></i></dd>
@@ -57,19 +51,60 @@
 		<script src="../js/script1.js"></script>
 		-->
 		<script>
-			//js function
-			function giveInfo(){
-			var n=1;
-			//js object
-			var info = {
-			name : "John Doe",
-			email : "abc@xyz.com",
-			phone : 1234567890
-			};
-			document.getElementById("name").innerHTML=info.name;
-			document.getElementById("email").innerHTML=info.email;
-			document.getElementById("phone").innerHTML=info.phone;
+			function displayInfo(){
+				const body = document.querySelector('body');
+
+				var info = {
+					name : "John Doe",
+					email : "abc@xyz.com",
+					phone : 1234567890
+				};
+				const divTop = document.createElement('div');
+				divTop.setAttribute('class', 'section')
+				divTop.setAttribute('name', 'top')
+				body.insertBefore(divTop, document.getElementsByClassName('section')[0])
+
+				const image1 = document.createElement('img');
+				image1.setAttribute('src', "../assets/favicon.png");
+				divTop.appendChild(image1);
+
+				const hoverText = document.createElement('p');
+				hoverText.setAttribute('class', 'hover');
+				hoverText.textContent = "click me to unveil baisc info"
+				divTop.appendChild(hoverText);
+
+				const ul = document.createElement('ul');
+				divTop.appendChild(ul);
+				ul.hidden = true;
+
+				const li1 = document.createElement('li');
+				li1.textContent = info.name;
+				ul.appendChild(li1);
+				const li2 = document.createElement('li');
+				li2.textContent = info.email;
+				ul.appendChild(li2);
+				const li3 = document.createElement('li');
+				li3.textContent = info.phone;
+				ul.appendChild(li3);
+				
+				var n = 0
+				image1.onclick = function(){
+					n++;
+					if (n%2!=0){
+						ul.hidden = false;
+						hoverText.textContent = "click me to hide this info"
+					}
+					else{
+						ul.hidden = true;
+						hoverText.textContent = "click me to unveil baisc info"
+					}
+					console.log("You have did it!!");
+				}
+				
+				
 			}
+			displayInfo();
+
 		</script>
 	
 	</body>
