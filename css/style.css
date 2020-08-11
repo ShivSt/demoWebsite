@@ -1,0 +1,28 @@
+a{
+    font-style: italic;
+}
+a:hover{
+    color: forestgreen;
+}
+
+
+
+
+div{
+    margin: 1% 1%;
+}
+
+.card.shadow.rounded:hover{
+    box-shadow: 0 0 70px grey;
+    border-radius: 20mm;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px grey;
+    border-radius: 20mm;
+}
+
+input:hover{
+    box-shadow: 0 0 5px grey;
+    border-radius: 5mm;
+}

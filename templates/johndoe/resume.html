@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>John's Resume</title>
+		<base href="file:///D:/Development/Web/demoSite/" />
+		<!-- ./ is used to access the current folder and ../ is used to access the parent of current -->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<title>John Doe resume</title>
+		<link rel="icon" href="assets/favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/favicon.png" width="100" height="auto" alt="" loading="lazy">
+			</a>
+		  
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown link
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="templates/addUser.html">Add a new user</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				  </li>
+			  </ul>
+			  <span style="margin-right: 5%;">
+				<h3 id="heading" style="color:antiquewhite">This is not the end! this is just skyfall</h1>
+				<p style="color: aqua;" ><i>just for fun!!</i></p>
+			  </span  >
+			  <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+			</div>
+		</nav>
+		
+		
+		<div class="section">
+			<h3 name="summary">Summary</h3>
+			<ul type="disc">
+				<li>Worked as an QA engineer for more than 2 and half years. 2 years of experience in Automation testing</li>
+				<li>Test scenario, cases identifications and writing</li>
+				<li>Working in agile team with daily scrum call</li>
+				<li>Bug reporting with JIRA and ALM tools</li>
+				<li>Handling a team of QA engineers for common goals</li>
+			</ul>
+		</div>
+		
+		<div class="section">
+			<h3 name="educations">Educational qualifications</h3>
+			<ul>
+				<li>B.Tech from ...</li>
+				<li>10+2 from ...</li>
+				<li>10th from ...</li>
+			</ul>
+		</div>
+		
+		<div class="section">
+			<h3 name="projects">Previous projects</h3>
+			<ol type="I">
+				<li>KPMG for </li>
+				<li>Freelancing</li>
+			</ol>
+		</div>
+		
+		<div class="section">
+			<h3 name="skills">Technical Skills</h3>
+			<dl style="padding-left: 20px">
+				<dt>Languages: </dt>	<dd><i>C. C++, Java, Python, SQL</i></i></dd>
+				<dt>Tools: </dt>	<dd><i>Selenium, Eclipse, Pycharm, VS code, jenkins</i></dd>
+				<dt>Reporting: </dt>	<dd><i>JIRA, ALM</i></dd>
+				<dt>Utility tools: </dt>	<dd><i>MS Office, skype, Open office</i></dd>	
+				<dt>Operating systems: </dt>	<dd><i>Windows, Linux</i></dd>
+				<dt>Others: </dt>	<dd><i>CICD, Github, git</i></dd>
+			</dl>
+		</div>
+		<!--
+		<script src="../js/script1.js"></script>
+		-->
+
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		
+
+		<script>
+			function displayInfo(){
+				const body = document.querySelector('body');
+
+				var info = {
+					name : "John Doe",
+					email : "abc@xyz.com",
+					phone : 1234567890
+				};
+				const divTop = document.createElement('div');
+				divTop.setAttribute('class', 'section')
+				divTop.setAttribute('name', 'top')
+				body.insertBefore(divTop, document.getElementsByClassName('section')[0])
+
+				const image1 = document.createElement('img');
+				image1.setAttribute('src', "assets/favicon.png");
+				divTop.appendChild(image1);
+
+				const hoverText = document.createElement('p');
+				hoverText.setAttribute('class', 'hover');
+				hoverText.textContent = "click me to unveil baisc info"
+				divTop.appendChild(hoverText);
+
+				const ul = document.createElement('ul');
+				divTop.appendChild(ul);
+				ul.hidden = true;
+
+				const li1 = document.createElement('li');
+				li1.textContent = info.name;
+				ul.appendChild(li1);
+				const li2 = document.createElement('li');
+				li2.textContent = info.email;
+				ul.appendChild(li2);
+				const li3 = document.createElement('li');
+				li3.textContent = info.phone;
+				ul.appendChild(li3);
+				
+				var n = 0
+				image1.onclick = function(){
+					n++;
+					if (n%2!=0){
+						ul.hidden = false;
+						hoverText.textContent = "click me to hide this info"
+					}
+					else{
+						ul.hidden = true;
+						hoverText.textContent = "click me to unveil baisc info"
+					}
+					console.log("You have did it!!");
+				}
+				
+				
+			}
+			displayInfo();
+
+		</script>
+	
+	</body>
+</html>

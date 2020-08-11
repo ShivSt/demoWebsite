@@ -8,13 +8,14 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-		<title>Personified profile</title>
+		<title>Shiv personified profile</title>
 		<link rel="icon" href="assets/favicon.png">
 		<link rel="stylesheet" href="css/style.css">
 
     </head>
+
     <body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
@@ -55,30 +56,31 @@
 			  </form>
 			</div>
 		</nav>
-		
+		    
 
-		<div class="row row-cols-1 row-cols-md-3">
-			<div class="col mb-4">
-			  <div class="card shadow rounded" style="width: 18rem;">
-				<img src="assets/favicon.png" class="card-img-top"  alt="john doe">
-				<div class="card-body">
-					<h5 class="card-title">John Doe Profile</h5>
-					<h6 class="card-subtitle mb-2 text-muted">aspiring dev</h6>
-					<p class="card-text">John is a leraner. He wants to learn many things. "A droplet in the sea"</p>
-					<a href="templates/johndoe/johndoe.html" class="btn btn-primary">John's profile</a>
-				</div>
-			  </div>
-			</div>
-			
-		</div>
+        <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="name">Your name: </label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="age">Age: </label>
+              <input type="number" class="form-control" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="place">Place: </label>
+                <input type="text" class="form-control" id="place" required>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
 
-
-		<!-- Optional JavaScript -->
-    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-		
-
-	</body>
-</html>
+		<script src="js/saveform.js"></script>
+        <script>saveForm();</script>
+    </body>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<base href="file:///D:/Development/Web/demoSite/" />
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-		<title>Personified profile</title>
+		<title>John Doe personified profile</title>
 		<link rel="icon" href="assets/favicon.png">
-		<link rel="stylesheet" href="css/style.css">
-
-    </head>
-    <body>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	
+	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand" href="index.html">
 				<img src="assets/favicon.png" width="100" height="auto" alt="" loading="lazy">
@@ -56,22 +56,70 @@
 			</div>
 		</nav>
 		
-
-		<div class="row row-cols-1 row-cols-md-3">
-			<div class="col mb-4">
-			  <div class="card shadow rounded" style="width: 18rem;">
-				<img src="assets/favicon.png" class="card-img-top"  alt="john doe">
-				<div class="card-body">
-					<h5 class="card-title">John Doe Profile</h5>
-					<h6 class="card-subtitle mb-2 text-muted">aspiring dev</h6>
-					<p class="card-text">John is a leraner. He wants to learn many things. "A droplet in the sea"</p>
-					<a href="templates/johndoe/johndoe.html" class="btn btn-primary">John's profile</a>
-				</div>
-			  </div>
-			</div>
-			
+		
+		<div class="section">
+			<h3 name="info" >Section 1: Basic info</h3>
+			<ul type="disc">
+				<li>Name: John Doe</li>
+				<li>Place: India</li>
+			</ul>
 		</div>
+		
+		<div class="section">
+			<h3 name="resume">Section 2: Resume</h3>
+			<a href="templates/johndoe/resume.html">John's Resume</a>
+		</div>
+		
+		<div class="section">
+			<h3 name="Webs">Section 3: Webs</h3>
+			<a href="https://github.com/ShivSt" target="_blank">John's github profile</a><br/>
+			<a href="https://linkedin.com/in/john-doe" target="_blank">John's linkedin profile</a>
+		</div>
+		
+		<div class="section">
+			<h3 name="Webs">Section 3: External videos</h3>
 
+			<div class="row row-cols-1 row-cols-md-3">
+				<div class="col mb-4">
+				  <div class="card shadow rounded" style="width: 18rem;">
+					<object name="external-video1" class="card-img-top" data="https://www.youtube.com/embed/h1es6YlbCjA" allowfullscreen></object>
+					<div class="card-body">
+						<h5 class="card-title">A youtube video</h5>
+						<h6 class="card-subtitle mb-2 text-muted">a smartphone review video</h6>
+						<p class="card-text">A youtube video, inserted in your webpage with object tag</p>
+						<a href="https://www.youtube.com/geekyranjit" >Visit his channel</a>
+					</div>
+				  </div>
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<div class="section">
+			<h3 name="likes" style="margin-bottom:-10px">Section 5: Everything Else</h3>
+			<p>
+			<ul type="square">
+				<li>Cricket <i>(playing more than watching)</i></li>
+				<li>Football <i>(watching)</i></li>
+				<li>books <i>(reading)</i></li>
+				<li>movies <i>(somewhat)</i></li>
+				<li>music <i>(listening)</i></li>
+			</ul>
+			</p>
+		</div>
+		<!--
+		<script src="resuorces/info.json"/>
+
+		<script>
+			var userinfo = JSON.parse(resources/info);
+			var basicInfo = document.getElementsByClassName("section")[0];
+			var infoList = basicInfo.getElementsByTagName("li");
+			infoList[0].innerHTML= `Name: ${userinfo['name']}`;
+			infoList[1].innerHTML= `Name: ${userinfo.place}`;
+			
+		</script>
+		-->
 
 		<!-- Optional JavaScript -->
     	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -79,6 +127,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		
-
+		
 	</body>
 </html>
