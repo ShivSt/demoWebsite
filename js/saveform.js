@@ -1,3 +1,4 @@
+
 var human = {
 
     name : "",
@@ -18,9 +19,13 @@ function saveForm() {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
+          $('.toast').toast('show')
         }
         form.classList.add('was-validated');
       }, false);
     });
+    
   }, false);
 }
+
+
