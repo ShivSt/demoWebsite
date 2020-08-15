@@ -19,6 +19,7 @@ function saveForm() {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
+          // Show warning message to user
           $('.toast').toast('show')
         }
         form.classList.add('was-validated');

@@ -18,6 +18,14 @@
             const noOfMatches = bodyText.match(re).length
             alert("Found "+noOfMatches+" in the page");
             console.log("Found "+noOfMatches+" in the page");
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        else{
+            alert("No match found in the page");
+            console.log("No match found in the page");
+            event.preventDefault();
+            event.stopPropagation();
         }
     };
 
